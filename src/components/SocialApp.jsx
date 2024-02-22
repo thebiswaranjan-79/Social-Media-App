@@ -1,9 +1,12 @@
 import React from 'react';
-import PostCard from './PostCard'
+import MainContainer from './MainContainer/MainContainer'
+import Navbar from './Navbar/Navbar'
 const SocialApp = () => {
     return (
         <div>
-            <PostCard/>
+            <Navbar/>
+            <MainContainer/>
+            
         </div>
     );
 }
