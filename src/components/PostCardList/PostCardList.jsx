@@ -1,6 +1,8 @@
 import PostCard from "../PostCard";
 import axios from "axios";
-import React, { useEffect, useState } from 'react';
+import React, { useEffect , useContext} from 'react';
+import PostCardContext from '../providers/PostsProvider';
+
 
 // let arr = [
     
@@ -66,7 +68,8 @@ import React, { useEffect, useState } from 'react';
 
 const PostCardList = () => {
 
-    const[posts, setPosts] = useState([]);
+    // const[posts, setPosts] = useState([]);
+    const{posts, setPosts} = useContext(PostCardContext);
 
     useEffect(() => {
         // We will Download the Content from dummyAPi.io
